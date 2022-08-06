@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans";
+    font-size: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.25rem;
+    font-weight: 500;
+    background-color: #F1f5f8;
+}
+
+
+header{
+    display: grid;
+    align-items: center;
+    height: 2.4rem;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px auto;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    background-color: white;
+}
+.colorflipper{
+    color: hsl(205, 78%, 60%);
+}
+.header .simplehex{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+.simple:hover,.hex:hover{
+    color: hsl(205, 78%, 60%);
+    cursor: pointer;
+}
+a{text-decoration: none;}
+a:visited{
+    color: black;
+}
+a:hover {
+    color: hsl(205, 78%, 60%);
+}
+
+
+main{
+    background: transparent;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.BG_color,.BG_color_two{
+    text-align: center;
+    margin: auto auto;
+    color: white;
+    height: 60px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: black;
+    border-radius: 6px;
+    font-size: 24px;
+    font-family: 'roboto';
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.BG_color .color_name,.BG_color_two .color_name_two{
+    color: hsl(205, 78%, 60%);  
+}
+
+
+.click_me,.click_me_two{
+    border: 1.5px solid black;
+    text-align: center;
+    margin: 0px auto;
+    width: 130px;
+    text-align: center;
+    margin: auto auto;
+    border-radius: 8px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.click_me:hover,.click_me_two:hover{
+    color: white;
+    background-color: black;
+    transition: 0.8s;
+    cursor: pointer;
+}
